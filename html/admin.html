@@ -13,11 +13,11 @@
         <form id="genSec" action="#" method="post">
             <div>
                 <label for="lbl_name" id="lbl_name">Name:</label>
-                <input type="text" name="dept_name" id="dpt_name" placeholder="name">
+                <input type="text" name="dept_name" id="dpt_name" placeholder="name" required autofocus>
             </div>
             <div>
                 <label for="dep_desc">Description:</label>
-                <input type="text" name="dep_desc" id="desc" placeholder="Description">
+                <input type="text" name="dep_desc" id="desc" placeholder="Description" required>
             </div>
             <div>
                 <label for="fatality">Fatal:</label>
@@ -36,11 +36,11 @@
         <form id="ailment" action="#" method="post">
             <div>
                 <label for="common_name" id="common_name">Common Name:</label>
-                <input type="text" name="common_name" id="ailment_cn" placeholder="Common Name">
+                <input type="text" name="common_name" id="ailment_cn" placeholder="Common Name" required>
             </div>
             <div>
                 <label for="med_name">Medical Name:</label>
-                <input type="text" name="med_name" id="med_name" placeholder="Medical Name">
+                <input type="text" name="med_name" id="med_name" placeholder="Medical Name" required>
             </div>
             <div>
                 <button type="submit">Submit</button>
@@ -52,26 +52,31 @@
         <form id="drug" action="#" method="post">
             <div>
                 <label for="drug_name" id="lbl_drug">Name:</label>
-                <input type="text" name="drug_name" id="drug_name" placeholder="Name of drug">
+                <input type="text" name="drug_name" id="drug_name" placeholder="Name of drug" required>
             </div>
             <div>
                 <label for="drug_type">Type:</label>
-                <input type="text" name="drug_type" id="drug_type" placeholder="Type of drug">
+                <input type="text" name="drug_type" id="drug_type" placeholder="Type of drug" required>
             </div>
             <div>
                 <label for="drug_desc">Description:</label>
-                <input type="text" name="drug_desc" id="drug_desc" placeholder="Description">
+                <input type="text" name="drug_desc" id="drug_desc" placeholder="Description" required>
             </div>
             <div>
                 <label for="grade">Grade:</label>
                 <div class="radio_divs">
                     <input type="radio" name="gradeA" id="gradeA">A
                     <input type="radio" name="gradeB" id="gradeB">B
+                    <input type="radio" name="gradeC" id="gradeB">C
                 </div>
             </div>
             <div>
                 <label for="approval_sta">Approval Status</label>
-                <input type="text" name="approval_sta" id="approval_sta" placeholder="Approval Status">
+                <select type="text" name="approval_sta" id="approval_sta" placeholder="Approval Status">
+                    <option value="aproval_status" style="text-align: center;">----------Approval Status----------</option>
+                    <option value="aproved" style="text-align: center;">Approved</option>
+                    <option value="pending" style="text-align: center;">Pending</option>
+                </select>
             </div>
             <div>
                 <label for="manufacturer">Manufacturer</label>
