@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Reg</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div><a href="../index.html">Back to Home</a></div>
+    <section>
+        <h2>New Department</h2>
+        <form id="genSec" action="#" method="post">
+            <div>
+                <label for="lbl_name" id="lbl_name">Name:</label>
+                <input type="text" name="dept_name" id="dpt_name" placeholder="name">
+            </div>
+            <div>
+                <label for="dep_desc">Description:</label>
+                <input type="text" name="dep_desc" id="desc" placeholder="Description">
+            </div>
+            <div>
+                <label for="fatality">Fatal:</label>
+                <div class="radio_divs">
+                    <input type="radio" name="fatality" id="fatl">Yes
+                    <input type="radio" name="fatality" id="not_fatal"> NO
+                </div>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>New Ailment</h2>
+        <form id="ailment" action="#" method="post">
+            <div>
+                <label for="common_name" id="common_name">Common Name:</label>
+                <input type="text" name="common_name" id="ailment_cn" placeholder="Common Name">
+            </div>
+            <div>
+                <label for="med_name">Medical Name:</label>
+                <input type="text" name="med_name" id="med_name" placeholder="Medical Name">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>New Drugs</h2>
+        <form id="drug" action="#" method="post">
+            <div>
+                <label for="drug_name" id="lbl_drug">Name:</label>
+                <input type="text" name="drug_name" id="drug_name" placeholder="Name of drug">
+            </div>
+            <div>
+                <label for="drug_type">Type:</label>
+                <input type="text" name="drug_type" id="drug_type" placeholder="Type of drug">
+            </div>
+            <div>
+                <label for="drug_desc">Description:</label>
+                <input type="text" name="drug_desc" id="drug_desc" placeholder="Description">
+            </div>
+            <div>
+                <label for="grade">Grade:</label>
+                <div class="radio_divs">
+                    <input type="radio" name="gradeA" id="gradeA">A
+                    <input type="radio" name="gradeB" id="gradeB">B
+                </div>
+            </div>
+            <div>
+                <label for="approval_sta">Approval Status</label>
+                <input type="text" name="approval_sta" id="approval_sta" placeholder="Approval Status">
+            </div>
+            <div>
+                <label for="manufacturer">Manufacturer</label>
+                <input type="text" name="manufacturer" id="manufacturer" placeholder="Manufacturer">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
